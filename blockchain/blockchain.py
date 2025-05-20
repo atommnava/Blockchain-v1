@@ -20,3 +20,13 @@ initialBlock = NeuralCoinBlock("Initial String", [t1,t2])
 
 print(initialBlock.blockData)
 print(initialBlock.blockHash)
+
+secondBlock = NeuralCoinBlock(initialBlock.blockHash, [t3,t4])
+
+print(secondBlock.blockData)
+print(secondBlock.blockHash)
+
+thirdBlock = NeuralCoinBlock(secondBlock.blockHash, [t5,t6])
+
+print(thirdBlock.blockData)
+print(thirdBlock.blockHash)
